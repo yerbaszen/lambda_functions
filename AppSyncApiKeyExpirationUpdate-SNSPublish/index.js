@@ -16,7 +16,7 @@ exports.handler = async (event) => {
 	var keyCount = 0;
 	var appsync = new AWS.AppSync({ apiVersion: '2017-07-25' });
 	var d = new Date();
-	d.setDate(d.getDate() + 203);
+	d.setDate(d.getDate() + 363);
 	d.setHours(0, 0, 0);
 	d.setMilliseconds(0);
 	const expires = d / 1000 | 0;
