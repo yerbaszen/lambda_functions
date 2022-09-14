@@ -3,4 +3,4 @@
 Lambda Environments: 
 SNS_TOPIC_ARN (mandatory) 
 
-Required Policies:
+Required Policies: policy.json
