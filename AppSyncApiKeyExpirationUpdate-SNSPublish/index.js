@@ -53,9 +53,9 @@ exports.handler = async (event) => {
 
 	response.statusCode = 200;
 	response.body = JSON.stringify(`${keyCount} key${keyCount !== 1 ? "s" : ""} updated.`);
-	publishToSNS(snsMessage, '[App] Monthly AppSync Api Keys expiration update.');
+	await publishToSNS(snsMessage, '[App] Monthly AppSync Api Keys expiration update.');
 
-	function publishToSNS(snsMessage, snsSubject) {
+function publishToSNS(snsMessage, snsSubject) {
 		if (!snsMessage) {
 			return Promise.resolve();
 		}
